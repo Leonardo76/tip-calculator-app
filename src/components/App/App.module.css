@@ -26,6 +26,14 @@
     padding-block-start: 10.1875rem;
   }
 }
+.mainContainer .titleHidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 .mainContainer .contentContainer {
   display: flex;
   flex-direction: column;

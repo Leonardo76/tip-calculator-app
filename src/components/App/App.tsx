@@ -8,7 +8,7 @@ function App() {
    return (
       <main className={style['mainContainer']}>
          <img src={logo} alt="Splitter logo" className={style['logo']}/>
-         <h1 style={{display:'none'}}>Splitter calculator</h1>
+         <h1  className={style['titleHidden']}>Splitter calculator</h1>
          <article className={style['contentContainer']} aria-label={"Content"}>
             <BillDataInput/>
             <TipCard/>

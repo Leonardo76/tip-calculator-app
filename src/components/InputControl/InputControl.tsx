@@ -66,14 +66,13 @@ export default function InputControl({options}: InputBillProps) {
    return (
       <div className={style['inputContainerGlobal']}>
          <div className={style['textContainer']}>
-            <label htmlFor="input" className={style["labelText"]}>{labelText}</label>
+            <label className={style["labelText"]}>{labelText}</label>
             <span className={style['errorMessage']}>{errorMessage}</span>
          </div>
 
          <div className={classnames(style['inputContainer'])}>
             {getIconToShow(iconType)}
             <input type={"text"}
-                   id="input"
                    className={
                       classnames(
                          style['input'],
