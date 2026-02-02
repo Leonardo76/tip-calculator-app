@@ -66,7 +66,7 @@ export default function InputControl({options}: InputBillProps) {
    return (
       <div className={style['inputContainerGlobal']}>
          <div className={style['textContainer']}>
-            <label className={style["labelText"]}>{labelText}</label>
+            <p className={style["labelText"]}>{labelText}</p>
             <span className={style['errorMessage']}>{errorMessage}</span>
          </div>
 

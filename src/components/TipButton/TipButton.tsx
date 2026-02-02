@@ -40,18 +40,26 @@ export default function TipButton({type = BUTTON_TYPE_NORMAL, children}: TipButt
       }
    }
 
+   const handleClickCustom = () => {
+      alert("Implement custom case");
+   }
+
    return (
-      <button className={
-         classnames(
-            style['tipButton'], //normal
-            {[style['selected']]: selected}, //selected
-            {[style['custom']]: custom && !selected}, //custom
-         )
-      }
-              onClick={handleClick}
-      >
-         {isNumber ? `${children}%` : children}
-      </button>
+      <>
+         <button className={
+            classnames(
+               style['tipButton'], //normal
+               {[style['selected']]: selected}, //selected
+               {[style['custom']]: custom && !selected}, //custom
+            )
+         }
+                 onClick={isNumber ? handleClick : handleClickCustom}
+                 aria-label={`Select ${children} percent tip`}
+         >
+            {isNumber ? `${children}%` : children}
+         </button>
+
+      </>
    )
 }
 

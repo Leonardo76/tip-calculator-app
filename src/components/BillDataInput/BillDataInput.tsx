@@ -11,7 +11,7 @@ export default function BillDataInput() {
 
    return (
       <section className={style['billGlobalContainer']} aria-label={'Bill'}>
-         <h2 style={{display: 'none'}}>Data input</h2>
+         <h2 className={style['titleHidden']}>Data input</h2>
          <InputControl options={billOptions}/>
 
          <section className={style['tipContainer']} aria-label={'Tip choice section'}>
