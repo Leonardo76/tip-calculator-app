@@ -1,0 +1,125 @@
+@use 'utils' as *;
+
+//region USED FONTS
+
+/* space-mono-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/space-mono-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* space-mono-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/space-mono-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+//endregion
+
+:root {
+	--font: 'Space Mono';
+
+	//region GLOBAL VARIABLES
+
+	--fs-48: 48px;
+	--fs-32: 32px;
+	--fs-24: 24px;
+	--fs-20: 20px;
+	--fs-16: 16px;
+	--fs-13: 13px;
+
+	--lh-71: 71px;
+	--lh-47: 47px;
+	--lh-36: 36px;
+	--lh-30: 30px;
+	--lh-24: 24px;
+	--lh-19: 19px;
+	--lh-auto: 100%;
+
+	--ls-0: 0;
+	--ls-67: -0.67px;
+	--ls-1: -1px;
+
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	//endregion
+
+	//region PERSONALIZED VARIABLES
+
+	//region font size
+	--font-size-app-default:var(--fs-16);
+	--font-size-select-tip-text: var(--fs-16);
+	--font-size-tipCard-tipAmountLabel: var(--fs-16);
+	--font-size-tipCard-tipAmountLabelPerPerson: var(--fs-13);
+	--font-size-tipCard-tipAmount: var(--fs-32);
+	--font-size-tipCard-totalAmountLabel: var(--fs-16);
+	--font-size-tipCard-totalAmountLabelPerPerson: var(--fs-13);
+	--font-size-tipCard-totalAmount: var(--fs-32);
+	--font-size-tipCard-resetButton: var(--fs-20);
+	--font-size-tipButton: var(--fs-24);
+	--font-size-input-control-label-text: var(--fs-16);
+	--font-size-input-control-error-message: var(--fs-16);
+	--font-size-input-control-text: var(--fs-24);
+
+	@include breakpoint(tablet) {
+		--font-size-tipCard-tipAmount: var(--fs-48);
+		--font-size-tipCard-totalAmount: var(--fs-48);
+	}
+	//endregion
+
+	//region font weight
+	--font-weight-app-default: var(--fw-bold);
+	--font-weight-select-tip-text: var(--fw-bold);
+	--font-weight-tipCard-tipAmount: var(--fw-bold);
+	--font-weight-tipCard-totalAmount: var(--fw-bold);
+	--font-weight-tipCard-resetButton: var(--fw-bold);
+	--font-weight-tipButton: var(--fw-bold);
+	--font-weight-input-control-label-text: var(--fw-bold);
+	--font-weight-input-control-error-message: var(--fw-bold);
+	--font-weight-input-control-text: var(--fw-bold);
+	//endregion
+
+	//region line height
+	--line-height-app-default:var(--lh-24);
+	--line-height-select-tip-text: var(--lh-24);
+	--line-height-tipCard-tipAmountLabel: var(--lh-24);
+	--line-height-tipCard-tipAmountLabelPerPerson: var(--lh-19);
+	--line-height-tipCard-tipAmount: var(--lh-auto);
+	--line-height-tipCard-totalAmountLabel: var(--lh-24);
+	--line-height-tipCard-totalAmountLabelPerPerson: var(--lh-19);
+	--line-height-tipCard-totalAmount: var(--lh-auto);
+	--line-height-tipCard-resetButton: var(--lh-30);
+	--line-height-tipButton: var(--lh-36);
+	--line-height-input-control-label-text: var(--lh-24);
+	--line-height-input-control-error-message: var(--lh-24);
+	--line-height-input-control-text: var(--lh-36);
+
+	@include breakpoint(tablet) {
+		--line-height-tipCard-tipAmount: var(--lh-71);
+		--line-height-tipCard-totalAmount: var(--lh-71);
+	}
+	//endregion
+
+	//region letter spacing
+	--letter-spacing-app-default: var(--ls-0);
+	--letter-spacing-tipCard-tipAmount: var(--ls-67);
+	--letter-spacing-tipCard-totalAmount: var(--ls-67);
+	--letter-spacing-tipButton: var(--ls-0);
+	--letter-spacing-input-control-text: var(--ls-0);
+
+	@include breakpoint(tablet) {
+		--letter-spacing-tipCard-tipAmount: var(--ls-1);
+		--letter-spacing-tipCard-totalAmount: var(--ls-1);
+	}
+	//endregion
+
+
+	//endregion
+}

@@ -1,0 +1,61 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5625rem;
+  background-color: var(--color-app-bg);
+  height: 100vh;
+  min-width: 21.875rem;
+}
+@media (min-width: 48rem) {
+  .mainContainer {
+    padding-inline: 5rem;
+  }
+}
+@media (min-width: 90rem) {
+  .mainContainer {
+    padding-inline: 16.25rem;
+    gap: 5.5rem;
+  }
+}
+.mainContainer .logo {
+  padding-block-start: 3.125rem;
+  margin-inline: auto;
+}
+@media (min-width: 90rem) {
+  .mainContainer .logo {
+    padding-block-start: 10.1875rem;
+  }
+}
+.mainContainer .contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  background-color: var(--color-app-content-container);
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 32px 43px 0 hsla(186, 38%, 50%, 0.2);
+}
+@media (min-width: 48rem) {
+  .mainContainer .contentContainer {
+    gap: 2.5rem;
+    padding-inline: 5rem;
+    padding-block: 3rem;
+    height: auto;
+    border-radius: 25px;
+  }
+}
+@media (min-width: 90rem) {
+  .mainContainer .contentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-inline: 2.5rem;
+    padding-block: 2rem;
+    width: 57.5rem;
+    margin-inline: auto;
+  }
+}
+
+/*# sourceMappingURL=App.module.css.map */

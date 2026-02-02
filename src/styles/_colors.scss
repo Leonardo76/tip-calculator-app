@@ -1,0 +1,62 @@
+:root {
+	//region GLOBAL VARIABLES
+
+	--c-green-900: hsl(183, 100%, 15%);
+	--c-green-800: hsl(183, 85%, 21%);
+	--c-green-750: hsl(183, 78%, 24%);
+	--c-green-400: hsl(172, 67%, 45%);
+	--c-green-200: hsl(173, 61%, 77%);
+
+	--c-grey-600: hsl(180, 25%, 32%);
+	--c-grey-550: hsl(180, 18%, 40%);
+	--c-grey-500: hsl(186, 14%, 43%);
+	--c-grey-400: hsl(184, 14%, 56%);
+	--c-grey-300: hsl(184, 19%, 68%);
+	--c-grey-200: hsl(185, 41%, 84%);
+	--c-grey-50: hsl(189, 47%, 97%);
+	--c-white: hsl(0, 100%, 100%);
+	--c-black: hsl(0, 0%, 0%);
+
+	--c-orange-400: hsl(13, 70%, 60%);
+
+	//endregion
+
+	//region PERSONALIZED VARIABLES
+	--color-app-bg:var(--c-grey-200);
+	--color-app-content-container:var(--c-white);
+
+	--color-select-tip-text:var(--c-grey-500);
+
+	--color-input-control-label-text:var(--c-grey-500);
+	--color-input-control-error-message:var(--c-orange-400);
+	--color-input-control-bg:var(--c-grey-50);
+	--color-input-control-text:var(--c-green-900);
+	--color-input-control-border-focus:var(--c-green-400);
+	--color-input-control-border-error:var(--c-orange-400);
+	--color-input-control-icon:var(--c-grey-300);
+
+	--color-tipCard-bg: var(--c-green-900);
+	--color-tipCard-tipAmountLabel-text: var(--c-white);
+	--color-tipCard-tipAmountLabelPerPerson-text: var(--c-grey-400);
+	--color-tipCard-tipAmount-text: var(--c-green-400);
+	--color-tipCard-totalAmountLabel-text: var(--c-white);
+	--color-tipCard-totalAmountLabelPerPerson-text: var(--c-grey-400);
+	--color-tipCard-totalAmount-text: var(--c-green-400);
+	--color-tipCard-resetButton-bg: var(--c-green-750);
+	--color-tipCard-resetButton-text: var(--c-green-800);
+	--color-tipCard-resetButton-bg-hover: var(--c-green-200);
+	--color-tipCard-resetButton-text-hover: var(--c-green-900);
+	--color-tipCard-resetButton-bg-nonEmpty: var(--c-green-400);
+	--color-tipCard-resetButton-text-nonEmpty: var(--c-green-900);
+
+	--color-tipButton-bg: var(--c-green-900);
+	--color-tipButton-text: var(--c-grey-50);
+	--color-tipButton-bg-hover: var(--c-green-200);
+	--color-tipButton-text-hover: var(--c-green-900);
+	--color-tipButton-bg-selected: var(--c-green-400);
+	--color-tipButton-text-selected: var(--c-green-900);
+	--color-tipButton-bg-custom: var(--c-grey-50);
+	--color-tipButton-text-custom: var(--c-grey-550);
+
+	//endregion
+}

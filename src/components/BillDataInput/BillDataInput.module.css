@@ -1,0 +1,39 @@
+.billGlobalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 48rem) {
+  .billGlobalContainer {
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 90rem) {
+  .billGlobalContainer {
+    gap: 2.5rem;
+  }
+}
+.billGlobalContainer .tipContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.billGlobalContainer .tipContainer .selectTipText {
+  color: var(--color-select-tip-text);
+  font-size: var(--font-size-select-tip-text);
+  font-weight: var(--font-weight-select-tip-text);
+  line-height: var(--line-height-select-tip-text);
+  text-transform: capitalize;
+}
+.billGlobalContainer .tipContainer .tipOptionsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .billGlobalContainer .tipContainer .tipOptionsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=BillDataInput.module.css.map */

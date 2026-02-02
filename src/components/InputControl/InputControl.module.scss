@@ -1,0 +1,67 @@
+@use '../../styles/utils' as *;
+
+.inputContainerGlobal {
+	display: flex;
+	flex-direction: column;
+	gap: calcRem(8);
+
+	.textContainer {
+		display: flex;
+		justify-content: space-between;
+
+		.labelText {
+			color: var(--color-input-control-label-text);
+			font-size: var(--font-size-input-control-label-text);
+			font-weight: var(--font-weight-input-control-label-text);
+			line-height: var(--line-height-input-control-label-text);
+		}
+
+		.errorMessage {
+			color: var(--color-input-control-error-message);
+			font-size: var(--font-size-input-control-error-message);
+			font-weight: var(--font-weight-input-control-error-message);
+			line-height: var(--line-height-input-control-error-message);
+		}
+	}
+
+	.inputContainer {
+		background-color: var(--color-input-control-bg);
+		display: flex;
+		align-items: center;
+
+		border-radius: 5px;
+		//padding-inline-end: calcRem(17);
+		padding-block: calcRem(8);
+		height: calcRem(48);
+		position: relative;//for icon inside the input control
+
+		@include breakpoint(desktop) {
+
+		}
+
+		.input {
+			width: 100%;
+			padding-inline-end: 18.37px;
+			text-align: end;
+			color: var(--color-input-control-text);
+			font-size: var(--font-size-input-control-text);
+			font-weight: var(--font-weight-input-control-text);
+			line-height: var(--line-height-input-control-text);
+			letter-spacing: var(--letter-spacing-input-control-text);
+
+			&:placeholder-shown {
+				opacity: 35%;
+			}
+
+			&:focus {
+				border: 2px solid var(--color-input-control-border-focus);
+				border-radius: 5px;
+			}
+		}
+	}
+}
+
+.errorBorder{
+	border: 2px solid var(--color-input-control-border-error);
+	border-radius: 5px;
+}

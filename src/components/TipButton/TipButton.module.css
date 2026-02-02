@@ -1,0 +1,26 @@
+.tipButton {
+  background-color: var(--color-tipButton-bg);
+  border-radius: 5px;
+  height: 3rem;
+  color: var(--color-tipButton-text);
+  font-size: var(--font-size-tipButton);
+  line-height: var(--line-height-tipButton);
+  font-weight: var(--font-weight-tipButton);
+  letter-spacing: var(--letter-spacing-tipButton);
+}
+.tipButton:hover {
+  background-color: var(--color-tipButton-bg-hover);
+  color: var(--color-tipButton-text-hover);
+}
+
+.selected {
+  background-color: var(--color-tipButton-bg-selected);
+  color: var(--color-tipButton-text-selected);
+}
+
+.custom {
+  background-color: var(--color-tipButton-bg-custom);
+  color: var(--color-tipButton-text-custom);
+}
+
+/*# sourceMappingURL=TipButton.module.css.map */

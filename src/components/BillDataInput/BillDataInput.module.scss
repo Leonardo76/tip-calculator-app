@@ -1,0 +1,38 @@
+@use '../../styles/utils' as *;
+
+.billGlobalContainer {
+	display: flex;
+	flex-direction: column;
+	gap: calcRem(32);
+
+	@include breakpoint(tablet) {
+		gap: calcRem(24);
+	}
+	@include breakpoint(desktop) {
+		gap: calcRem(40);
+	}
+
+	.tipContainer {
+		display: flex;
+		flex-direction: column;
+		gap: calcRem(8);
+
+		.selectTipText {
+			color: var(--color-select-tip-text);
+			font-size: var(--font-size-select-tip-text);
+			font-weight: var(--font-weight-select-tip-text);
+			line-height: var(--line-height-select-tip-text);
+			text-transform: capitalize;
+		}
+
+		.tipOptionsContainer {
+			display: grid;
+			grid-template-columns:repeat(2, 1fr);
+			gap: calcRem(16);
+
+			@include breakpoint(tablet) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+}

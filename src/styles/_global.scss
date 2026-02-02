@@ -1,0 +1,50 @@
+//region RESET
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	margin-block-end: 0;
+	border: 0;
+}
+
+body {
+	font-family: var(--font), Arial, Helvetica, sans-serif;
+	font-size: var(--font-size-app-default);
+	font-weight: var(--font-weight-app-default);
+	line-height: var(--line-height-app-default);
+	letter-spacing: var(--letter-spacing-app-default);
+}
+
+a {
+	text-decoration: none;
+}
+
+input, button, textarea, select {
+	font: inherit;
+	border: none;
+	padding: 0;
+	background: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+}
+
+a,
+button {
+	cursor: pointer;
+}
+
+img,
+video,
+iframe,
+picture {
+	display: block;
+	height: auto;
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+//endregion

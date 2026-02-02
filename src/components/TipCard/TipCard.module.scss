@@ -1,0 +1,115 @@
+@use '../../styles/utils' as *;
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: calcRem(32);
+	background-color: var(--color-tipCard-bg);
+	padding: calcRem(24);
+	border-radius: 15px;
+
+	@include breakpoint(tablet) {
+		padding-inline: calcRem(32);
+		padding-block: calcRem(24);
+		gap: calcRem(16);
+	}
+
+	@include breakpoint(desktop) {
+		gap: calcRem(128);
+	}
+
+	.tipAndTotalContainer {
+		display: flex;
+		flex-direction: column;
+		gap: calcRem(24);
+
+		@include breakpoint(tablet) {
+			gap: calcRem(8);
+		}
+
+		@include breakpoint(desktop) {
+			gap: calcRem(24);
+		}
+
+		.tipAmountContainer {
+			display: flex;
+			justify-content: space-between;
+
+			.tipAmountLabelContainer {
+				.tipAmountLabel {
+					color: var(--color-tipCard-tipAmountLabel-text);
+					font-size: var(--font-size-tipCard-tipAmountLabel);
+					line-height: var(--line-height-tipCard-tipAmountLabel);
+				}
+
+				.tipAmountLabelPerPerson {
+					color: var(--color-tipCard-tipAmountLabelPerPerson-text);
+					font-size: var(--font-size-tipCard-tipAmountLabelPerPerson);
+					line-height: var(--line-height-tipCard-tipAmountLabelPerPerson);
+				}
+			}
+
+			.tipAmount {
+				color: var(--color-tipCard-tipAmount-text);
+				font-size: var(--font-size-tipCard-tipAmount);
+				line-height: var(--line-height-tipCard-tipAmount);
+				letter-spacing: var(--letter-spacing-tipCard-tipAmount);
+				font-weight: var(--font-weight-tipCard-tipAmount);
+			}
+		}
+
+		.totalAmountContainer {
+			display: flex;
+			justify-content: space-between;
+
+			.totalAmountLabelContainer {
+				.totalAmountLabel {
+					color: var(--color-tipCard-totalAmountLabel-text);
+					font-size: var(--font-size-tipCard-totalAmountLabel);
+					line-height: var(--line-height-tipCard-totalAmountLabel);
+				}
+
+				.totalAmountLabelPerPerson {
+					color: var(--color-tipCard-totalAmountLabelPerPerson-text);
+					font-size: var(--font-size-tipCard-totalAmountLabelPerPerson);
+					line-height: var(--line-height-tipCard-totalAmountLabelPerPerson);
+				}
+			}
+
+			.totalAmount {
+				color: var(--color-tipCard-totalAmount-text);
+				font-size: var(--font-size-tipCard-totalAmount);
+				letter-spacing: var(--letter-spacing-tipCard-totalAmount);
+				font-weight: var(--font-weight-tipCard-totalAmount);
+				line-height: var(--line-height-tipCard-totalAmount);
+			}
+		}
+	}
+
+	.resetButton {
+		background-color: var(--color-tipCard-resetButton-bg);
+		color: var(--color-tipCard-resetButton-text);
+		height: calcRem(48);
+		padding-block: calcRem(8);
+		padding-inline: calcRem(32);
+		font-size: var(--font-size-tipCard-resetButton);
+		line-height: var(--line-height-tipCard-resetButton);
+		font-weight: var(--font-weight-tipCard-resetButton);
+		text-transform: uppercase;
+		border-radius: 5px;
+
+		@include breakpoint(tablet){
+			padding-inline: calcRem(40);
+		}
+
+		&:hover {
+			background-color: var(--color-tipCard-resetButton-bg-hover);
+			color: var(--color-tipCard-resetButton-text-hover);
+		}
+	}
+
+	.nonEmpty {
+		background-color: var(--color-tipCard-resetButton-bg-nonEmpty);
+		color: var(--color-tipCard-resetButton-text-nonEmpty);
+	}
+}

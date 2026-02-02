@@ -1,0 +1,198 @@
+/* space-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/space-mono-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/space-mono-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --font: 'Space Mono';
+  --fs-48: 48px;
+  --fs-32: 32px;
+  --fs-24: 24px;
+  --fs-20: 20px;
+  --fs-16: 16px;
+  --fs-13: 13px;
+  --lh-71: 71px;
+  --lh-47: 47px;
+  --lh-36: 36px;
+  --lh-30: 30px;
+  --lh-24: 24px;
+  --lh-19: 19px;
+  --lh-auto: 100%;
+  --ls-0: 0;
+  --ls-67: -0.67px;
+  --ls-1: -1px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --font-size-app-default:var(--fs-16);
+  --font-size-select-tip-text: var(--fs-16);
+  --font-size-tipCard-tipAmountLabel: var(--fs-16);
+  --font-size-tipCard-tipAmountLabelPerPerson: var(--fs-13);
+  --font-size-tipCard-tipAmount: var(--fs-32);
+  --font-size-tipCard-totalAmountLabel: var(--fs-16);
+  --font-size-tipCard-totalAmountLabelPerPerson: var(--fs-13);
+  --font-size-tipCard-totalAmount: var(--fs-32);
+  --font-size-tipCard-resetButton: var(--fs-20);
+  --font-size-tipButton: var(--fs-24);
+  --font-size-input-control-label-text: var(--fs-16);
+  --font-size-input-control-error-message: var(--fs-16);
+  --font-size-input-control-text: var(--fs-24);
+}
+@media (min-width: 48rem) {
+  :root {
+    --font-size-tipCard-tipAmount: var(--fs-48);
+    --font-size-tipCard-totalAmount: var(--fs-48);
+  }
+}
+:root {
+  --font-weight-app-default: var(--fw-bold);
+  --font-weight-select-tip-text: var(--fw-bold);
+  --font-weight-tipCard-tipAmount: var(--fw-bold);
+  --font-weight-tipCard-totalAmount: var(--fw-bold);
+  --font-weight-tipCard-resetButton: var(--fw-bold);
+  --font-weight-tipButton: var(--fw-bold);
+  --font-weight-input-control-label-text: var(--fw-bold);
+  --font-weight-input-control-error-message: var(--fw-bold);
+  --font-weight-input-control-text: var(--fw-bold);
+  --line-height-app-default:var(--lh-24);
+  --line-height-select-tip-text: var(--lh-24);
+  --line-height-tipCard-tipAmountLabel: var(--lh-24);
+  --line-height-tipCard-tipAmountLabelPerPerson: var(--lh-19);
+  --line-height-tipCard-tipAmount: var(--lh-auto);
+  --line-height-tipCard-totalAmountLabel: var(--lh-24);
+  --line-height-tipCard-totalAmountLabelPerPerson: var(--lh-19);
+  --line-height-tipCard-totalAmount: var(--lh-auto);
+  --line-height-tipCard-resetButton: var(--lh-30);
+  --line-height-tipButton: var(--lh-36);
+  --line-height-input-control-label-text: var(--lh-24);
+  --line-height-input-control-error-message: var(--lh-24);
+  --line-height-input-control-text: var(--lh-36);
+}
+@media (min-width: 48rem) {
+  :root {
+    --line-height-tipCard-tipAmount: var(--lh-71);
+    --line-height-tipCard-totalAmount: var(--lh-71);
+  }
+}
+:root {
+  --letter-spacing-app-default: var(--ls-0);
+  --letter-spacing-tipCard-tipAmount: var(--ls-67);
+  --letter-spacing-tipCard-totalAmount: var(--ls-67);
+  --letter-spacing-tipButton: var(--ls-0);
+  --letter-spacing-input-control-text: var(--ls-0);
+}
+@media (min-width: 48rem) {
+  :root {
+    --letter-spacing-tipCard-tipAmount: var(--ls-1);
+    --letter-spacing-tipCard-totalAmount: var(--ls-1);
+  }
+}
+
+:root {
+  --c-green-900: hsl(183, 100%, 15%);
+  --c-green-800: hsl(183, 85%, 21%);
+  --c-green-750: hsl(183, 78%, 24%);
+  --c-green-400: hsl(172, 67%, 45%);
+  --c-green-200: hsl(173, 61%, 77%);
+  --c-grey-600: hsl(180, 25%, 32%);
+  --c-grey-550: hsl(180, 18%, 40%);
+  --c-grey-500: hsl(186, 14%, 43%);
+  --c-grey-400: hsl(184, 14%, 56%);
+  --c-grey-300: hsl(184, 19%, 68%);
+  --c-grey-200: hsl(185, 41%, 84%);
+  --c-grey-50: hsl(189, 47%, 97%);
+  --c-white: hsl(0, 100%, 100%);
+  --c-black: hsl(0, 0%, 0%);
+  --c-orange-400: hsl(13, 70%, 60%);
+  --color-app-bg:var(--c-grey-200);
+  --color-app-content-container:var(--c-white);
+  --color-select-tip-text:var(--c-grey-500);
+  --color-input-control-label-text:var(--c-grey-500);
+  --color-input-control-error-message:var(--c-orange-400);
+  --color-input-control-bg:var(--c-grey-50);
+  --color-input-control-text:var(--c-green-900);
+  --color-input-control-border-focus:var(--c-green-400);
+  --color-input-control-border-error:var(--c-orange-400);
+  --color-input-control-icon:var(--c-grey-300);
+  --color-tipCard-bg: var(--c-green-900);
+  --color-tipCard-tipAmountLabel-text: var(--c-white);
+  --color-tipCard-tipAmountLabelPerPerson-text: var(--c-grey-400);
+  --color-tipCard-tipAmount-text: var(--c-green-400);
+  --color-tipCard-totalAmountLabel-text: var(--c-white);
+  --color-tipCard-totalAmountLabelPerPerson-text: var(--c-grey-400);
+  --color-tipCard-totalAmount-text: var(--c-green-400);
+  --color-tipCard-resetButton-bg: var(--c-green-750);
+  --color-tipCard-resetButton-text: var(--c-green-800);
+  --color-tipCard-resetButton-bg-hover: var(--c-green-200);
+  --color-tipCard-resetButton-text-hover: var(--c-green-900);
+  --color-tipCard-resetButton-bg-nonEmpty: var(--c-green-400);
+  --color-tipCard-resetButton-text-nonEmpty: var(--c-green-900);
+  --color-tipButton-bg: var(--c-green-900);
+  --color-tipButton-text: var(--c-grey-50);
+  --color-tipButton-bg-hover: var(--c-green-200);
+  --color-tipButton-text-hover: var(--c-green-900);
+  --color-tipButton-bg-selected: var(--c-green-400);
+  --color-tipButton-text-selected: var(--c-green-900);
+  --color-tipButton-bg-custom: var(--c-grey-50);
+  --color-tipButton-text-custom: var(--c-grey-550);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-block-end: 0;
+  border: 0;
+}
+
+body {
+  font-family: var(--font), Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-app-default);
+  font-weight: var(--font-weight-app-default);
+  line-height: var(--line-height-app-default);
+  letter-spacing: var(--letter-spacing-app-default);
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img,
+video,
+iframe,
+picture {
+  display: block;
+  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

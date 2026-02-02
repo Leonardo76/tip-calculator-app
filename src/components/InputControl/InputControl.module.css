@@ -1,0 +1,54 @@
+.inputContainerGlobal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.inputContainerGlobal .textContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.inputContainerGlobal .textContainer .labelText {
+  color: var(--color-input-control-label-text);
+  font-size: var(--font-size-input-control-label-text);
+  font-weight: var(--font-weight-input-control-label-text);
+  line-height: var(--line-height-input-control-label-text);
+}
+.inputContainerGlobal .textContainer .errorMessage {
+  color: var(--color-input-control-error-message);
+  font-size: var(--font-size-input-control-error-message);
+  font-weight: var(--font-weight-input-control-error-message);
+  line-height: var(--line-height-input-control-error-message);
+}
+.inputContainerGlobal .inputContainer {
+  background-color: var(--color-input-control-bg);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-block: 0.5rem;
+  height: 3rem;
+  position: relative;
+}
+.inputContainerGlobal .inputContainer .input {
+  width: 100%;
+  padding-inline-end: 18.37px;
+  text-align: end;
+  color: var(--color-input-control-text);
+  font-size: var(--font-size-input-control-text);
+  font-weight: var(--font-weight-input-control-text);
+  line-height: var(--line-height-input-control-text);
+  letter-spacing: var(--letter-spacing-input-control-text);
+}
+.inputContainerGlobal .inputContainer .input:placeholder-shown {
+  opacity: 35%;
+}
+.inputContainerGlobal .inputContainer .input:focus {
+  border: 2px solid var(--color-input-control-border-focus);
+  border-radius: 5px;
+}
+
+.errorBorder {
+  border: 2px solid var(--color-input-control-border-error);
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=InputControl.module.css.map */

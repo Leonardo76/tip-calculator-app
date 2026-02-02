@@ -1,0 +1,7 @@
+@use '../../styles/utils' as *;
+
+.icon{
+	position: absolute; //for icon inside the input control
+	left: calcRem(17);
+	color: var(--color-input-control-icon);
+}

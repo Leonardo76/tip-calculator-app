@@ -1,0 +1,58 @@
+@use '../../styles/utils' as *;
+
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	gap: calcRem(41);
+	background-color: var(--color-app-bg);
+	height: 100vh;
+	min-width: calcRem(350);
+
+	@include breakpoint(tablet){
+		padding-inline: calcRem(80);
+	}
+
+	@include breakpoint(desktop){
+		padding-inline: calcRem(260);
+		gap: calcRem(88);
+	}
+
+	.logo {
+		padding-block-start: calcRem(50);
+		margin-inline: auto;
+
+		@include breakpoint(desktop){
+			padding-block-start: calcRem(163);
+		}
+	}
+
+	.contentContainer {
+		display: flex;
+		flex-direction: column;
+		gap: calcRem(32);
+		height: 100%;
+		padding-inline: calcRem(24);
+		padding-block: calcRem(32);
+		background-color: var(--color-app-content-container);
+		border-radius: 25px 25px 0 0;
+		box-shadow: 0 32px 43px 0 hsla(186, 38%, 50%, 0.2);
+
+		@include breakpoint(tablet){
+			gap: calcRem(40);
+			padding-inline: calcRem(80);
+			padding-block: calcRem(48);
+			height:auto;
+			border-radius: 25px;
+		}
+
+		@include breakpoint(desktop){
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: calcRem(48);
+			padding-inline: calcRem(40);
+			padding-block: calcRem(32);
+			width: calcRem(920);
+			margin-inline: auto;
+		}
+	}
+}
